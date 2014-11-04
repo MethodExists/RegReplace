@@ -24,6 +24,13 @@
     //     "args": {"replacements": ["remove_html_comments", "remove_trailing_spaces"]}
     // },
 
+    //Drop html enlosing ractive brackets
+    {
+        "caption": "Reg Replace: Google Docs delete garbage",
+        "command": "reg_replace",
+        "args": {"replacements": ["google_docs_delete_garbage"]}
+    }
+
     // Preferences
     {
         "caption": "Preferences: Reg Replace Settings – Default",

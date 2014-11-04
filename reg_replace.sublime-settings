@@ -80,6 +80,13 @@
             "find" : "([^\\n\\r]+)",
             "replace": "",
             "greedy_replace": true
+        },
+        // Remove garbage from google docs and just leave ractive brackets
+        "google_docs_delete_garbage": {
+            "find": "<tr((?!>).)+>((?!(</tr>)|(\\{\\{((?!\\{\\{).)+\\}\\})).|\\n)+(\\{\\{\\#((?!\\{\\{).)+\\}\\}|\\{\\{\\/((?!\\{\\{).)+\\}\\})((?!(</tr>)|(\\{\\{((?!\\{\\{).)+\\}\\})).|\\n)+</tr>",
+            "replace": "\\6",
+            "greedy": true,
+            "case": false
         }
     },
 
